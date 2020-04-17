@@ -19,4 +19,11 @@ router.get("/:id", (req, res) => {
     .catch(error => res.status(500).json({ "message": error }));
 });
 
+// POST projects
+router.post("/", (req, res) => {
+    db.addProject(req.body)
+        .then(project => res.status(201).json(project))
+        .catch(error => res.status(500).json({ "message": error }));
+});
+
 module.exports = router;
