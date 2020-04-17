@@ -39,12 +39,16 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this week's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager.
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
+A relational database (like SQLite3) stores data in tables/rows. SQL is the language used to manage the data in a relational database.
 
 - [ ] Why do tables need a `primary key`?
+The primary key identifies each record in the table. Also used for relationships.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
+Foreign key.
 
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+A joining table/bridging table.
 
 ## Minimum Viable Product
 
