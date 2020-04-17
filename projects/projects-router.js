@@ -12,4 +12,11 @@ router.get("/", (req, res) => {
     .catch(error => res.status(500).json({ "message": error }));
 });
 
+// GET project by ID
+router.get("/:id", (req, res) => {
+    db.getProjectById(req.params.id)
+    .then(project => res.status(200).json(project))
+    .catch(error => res.status(500).json({ "message": error }));
+});
+
 module.exports = router;
